@@ -32,9 +32,48 @@
         <img src="assets/img/image0 (1).jpeg" alt="Professional Headshot" style="width:200px; border-radius:10px;">
         <p>A look into my professional background and academic journey.</p>
     </div>
+    
+ty wheeler
+6:31 PM (0 minutes ago)
+to me
+
+<div class="content-box" id="app-section">
+    <h2>Web App: Number Guesser</h2>
+    <p>I'm thinking of a number between 1 and 10. Can you guess it?</p>
+
+    <input type="number" id="guessInput" placeholder="Enter 1-10" style="padding: 5px; border-radius: 4px; border: 1px solid #ccc;">
+    <button onclick="checkGuess()" style="padding: 5px 15px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Submit Guess</button>
+
+    <p id="gameMessage" style="font-weight: bold; margin-top: 10px;"></p>
+
+    <script>
+        // Generate a random number when the page loads
+        const targetNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            const userGuess = document.getElementById('guessInput').value;
+            const messageElement = document.getElementById('gameMessage');
+
+            if (userGuess == targetNumber) {
+                messageElement.innerText = "🎉 Correct! You guessed it!";
+                messageElement.style.color = "green";
+            } else if (userGuess > targetNumber) {
+                messageElement.innerText = "Too high! Try again.";
+                messageElement.style.color = "orange";
+            } else if (userGuess < targetNumber) {
+                messageElement.innerText = "Too low! Try again.";
+                messageElement.style.color = "orange";
+            } else {
+                messageElement.innerText = "Please enter a valid number.";
+                messageElement.style.color = "red";
+            }
+        }
+    </script>
+</div>
     <div class="content-box">
     <h2>Learning Resources</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/L07QatV77v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f96Zat_YitA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 </div>
 <div class="content-box" id="tableau-section">
     <h2>Interactive Data Visualization</h2>

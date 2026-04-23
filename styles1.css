@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f7f6; /* Custom background color requirement */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family requirement */
+    color: #333; /* Font color requirement */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+#main-container { /* Positioning div 1 */
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Requirement 2.4: Font Family */
+    color: #2c3e50; /* Requirement 2.4: Font Color */
+}
+
+.content-box { /* Positioning div 2 */
+  background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6; /* Positioning/Styling div Requirement */
+}
+
+.app-section { /* Positioning div 3 */
+    background-color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1 { color: #2c3e50; }
+
+/* Target the main container and all content boxes */
+#main-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Requirement 2.4: Font Family */
+    color: #2c3e50; /* Requirement 2.4: Font Color */
+}
+
+
